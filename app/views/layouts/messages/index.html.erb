@@ -1,0 +1,11 @@
+<h2>Coding Dojo Wall</h2>
+<h2>Welcome <%= @user.username %>
+
+<form action="/messages" method="post">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	<textarea name="message[message]" id="message" cols="60" rows="10"></textarea>
+
+    <input type="submit" value="Post a Message">
+</form>
+
+<%= @user %>

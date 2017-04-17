@@ -1,0 +1,10 @@
+<h1>Sign in to the RoR Wall</h1>
+
+<form action="/login" method="post">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token">
+	<h3>
+		<label>Username:</label>
+		<input type="text" name="username" id="username">
+	</h3>
+	<input type="submit" value="Sign In">
+</form>
